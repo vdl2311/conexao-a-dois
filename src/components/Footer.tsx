@@ -10,8 +10,8 @@ export function Footer() {
         <Link to="/contato" className="text-inherit no-underline ml-1">Contato</Link>
       </p>
       <p className="mt-3 max-w-[800px] mx-auto">Este produto é um e-book digital. Os resultados podem variar de acordo com o engajamento e as circunstâncias individuais de cada casal. Este guia não substitui acompanhamento psicológico ou terapia conjugal profissional.</p>
-      <p className="mt-6 max-w-[800px] mx-auto text-[11px] text-white/25 border-t border-white/10 pt-4">
-        <strong>AVISO LEGAL:</strong> Este site não faz parte do site do Facebook ou da Facebook Inc. Além disso, este site NÃO é endossado pelo Facebook de nenhuma maneira. FACEBOOK é uma marca comercial da FACEBOOK, Inc.
+      <p className="mt-6 max-w-[800px] mx-auto text-[12px] text-white/50 border-t border-white/10 pt-5 leading-[1.6]">
+        <strong>AVISO LEGAL:</strong> Este site não é afiliado, endossado ou parte do site do Facebook e de nenhuma entidade da Facebook Inc. FACEBOOK é uma marca comercial da FACEBOOK, Inc.
       </p>
     </footer>
   );
