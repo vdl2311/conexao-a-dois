@@ -15,21 +15,21 @@ export function Pain() {
         </Reveal>
 
         <Reveal className="flex flex-col gap-4 mt-10">
-          <div className="bg-white border-l-4 border-brand-gold py-6 px-7 rounded-r-xl mb-5 font-serif italic text-[18px] text-brand-navy leading-[1.6] shadow-[0_4px_20px_rgba(26,39,68,0.06)]">
+          <div className="bg-white border-l-4 border-brand-gold py-6 px-7 rounded-r-xl mb-5 font-serif italic text-[20px] text-brand-navy leading-[1.6] shadow-[0_4px_20px_rgba(26,39,68,0.06)]">
             "Moramos juntos, mas em alguns dias parece que somos estranhos. Faz tempo que não temos uma conversa de verdade."
-            <span className="block font-sans not-italic text-[13px] text-brand-gray mt-2">
+            <span className="block font-sans not-italic text-[15px] text-brand-gray mt-2.5">
               — Realidade compartilhada por milhares de casais
             </span>
           </div>
-          <div className="bg-white border-l-4 border-brand-gold py-6 px-7 rounded-r-xl mb-5 font-serif italic text-[18px] text-brand-navy leading-[1.6] shadow-[0_4px_20px_rgba(26,39,68,0.06)]">
+          <div className="bg-white border-l-4 border-brand-gold py-6 px-7 rounded-r-xl mb-5 font-serif italic text-[20px] text-brand-navy leading-[1.6] shadow-[0_4px_20px_rgba(26,39,68,0.06)]">
             "Tentamos fazer devocional juntos, mas a rotina nos engoliu. Acabamos brigando ou simplesmente desistindo."
-            <span className="block font-sans not-italic text-[13px] text-brand-gray mt-2">
+            <span className="block font-sans not-italic text-[15px] text-brand-gray mt-2.5">
               — Desafio comum na correria do dia a dia
             </span>
           </div>
-          <div className="bg-white border-l-4 border-brand-gold py-6 px-7 rounded-r-xl mb-5 font-serif italic text-[18px] text-brand-navy leading-[1.6] shadow-[0_4px_20px_rgba(26,39,68,0.06)]">
+          <div className="bg-white border-l-4 border-brand-gold py-6 px-7 rounded-r-xl mb-5 font-serif italic text-[20px] text-brand-navy leading-[1.6] shadow-[0_4px_20px_rgba(26,39,68,0.06)]">
             "Dinheiro é um assunto que nunca conseguimos discutir sem briga. Simplesmente evitamos falar."
-            <span className="block font-sans not-italic text-[13px] text-brand-gray mt-2">
+            <span className="block font-sans not-italic text-[15px] text-brand-gray mt-2.5">
               — Principal fonte de conflito conjugal
             </span>
           </div>
@@ -37,10 +37,10 @@ export function Pain() {
 
         <Reveal>
           <div className="bg-brand-navy text-white rounded-[16px] py-8 px-7 mt-5 text-center">
-            <p className="font-serif italic text-[20px] leading-[1.6] mb-3">
+            <p className="font-serif italic text-[22px] leading-[1.6] mb-3">
               "São os pequenos raposos que estragam as vinhas."
             </p>
-            <p className="text-[13px] text-white/50">Cântico dos Cânticos 2:15</p>
+            <p className="text-[15px] text-white/60">Cântico dos Cânticos 2:15</p>
           </div>
         </Reveal>
       </div>

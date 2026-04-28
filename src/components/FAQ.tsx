@@ -43,7 +43,7 @@ export function FAQ() {
                 <div key={index} className="border-b border-brand-navy/10 py-5 last:border-b-0">
                   <button 
                     onClick={() => setOpenIndex(isOpen ? null : index)}
-                    className="w-full font-serif text-[17px] cursor-pointer flex justify-between items-center text-brand-navy text-left bg-transparent border-none p-0 focus:outline-none"
+                    className="w-full font-serif text-[19px] cursor-pointer flex justify-between items-center text-brand-navy text-left bg-transparent border-none p-0 focus:outline-none"
                   >
                     {faq.q}
                     <span 
@@ -53,7 +53,7 @@ export function FAQ() {
                     </span>
                   </button>
                   <div 
-                    className={`text-[14px] text-brand-gray leading-[1.8] overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[300px] pt-3 opacity-100' : 'max-h-0 pt-0 opacity-0'}`}
+                    className={`text-[16px] text-brand-gray leading-[1.8] overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[300px] pt-3 opacity-100' : 'max-h-0 pt-0 opacity-0'}`}
                   >
                     {faq.a}
                   </div>

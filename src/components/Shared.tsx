@@ -22,7 +22,7 @@ export const PrimaryButton = ({ href, children, className = '', onClick }: { hre
     <Comp
       href={href}
       onClick={onClick}
-      className={`inline-block bg-gradient-to-br from-brand-gold to-brand-gold2 text-brand-navy font-bold text-[15px] sm:text-[17px] tracking-[0.5px] py-4 px-6 sm:py-5 sm:px-10 rounded-[50px] transition-all duration-200 border-none cursor-pointer btn-pulse hover:-translate-y-[2px] hover:shadow-[0_14px_40px_rgba(201,168,76,0.45)] text-center ${className}`}
+      className={`inline-block bg-gradient-to-br from-brand-gold to-brand-gold2 text-brand-navy font-bold text-[16px] sm:text-[18px] tracking-[0.5px] py-4 px-6 sm:py-5 sm:px-10 rounded-[50px] transition-all duration-200 border-none cursor-pointer btn-pulse hover:-translate-y-[2px] hover:shadow-[0_14px_40px_rgba(201,168,76,0.45)] text-center ${className}`}
     >
       {children}
     </Comp>
@@ -30,19 +30,19 @@ export const PrimaryButton = ({ href, children, className = '', onClick }: { hre
 };
 
 export const SectionLabel = ({ children, className = '' }: { children: React.ReactNode, className?: string }) => (
-  <p className={`text-[11px] font-bold tracking-[3px] uppercase text-brand-gold text-center mb-[14px] ${className}`}>
+  <p className={`text-[13px] font-bold tracking-[3px] uppercase text-brand-gold text-center mb-[14px] ${className}`}>
     {children}
   </p>
 );
 
 export const SectionTitle = ({ children, className = '' }: { children: React.ReactNode, className?: string }) => (
-  <h2 className={`font-serif text-[clamp(26px,4vw,40px)] text-center leading-[1.25] mb-4 ${className}`}>
+  <h2 className={`font-serif text-[clamp(28px,4.5vw,44px)] text-center leading-[1.25] mb-4 ${className}`}>
     {children}
   </h2>
 );
 
 export const SectionSub = ({ children, className = '' }: { children: React.ReactNode, className?: string }) => (
-  <p className={`text-brand-gray text-center text-[17px] leading-[1.7] max-w-[600px] mx-auto mb-12 ${className}`}>
+  <p className={`text-brand-gray text-center text-[18px] sm:text-[19px] leading-[1.7] max-w-[650px] mx-auto mb-12 ${className}`}>
     {children}
   </p>
 );
