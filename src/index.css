@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-navy: #1A2744;
+  --color-brand-gold: #C9A84C;
+  --color-brand-gold2: #E8C66A;
+  --color-brand-cream: #FDF8F0;
+  --color-brand-warm: #F5EDD8;
+  --color-brand-gray: #6B6B6B;
+  --color-brand-light: #F9F5EE;
+  --color-brand-red: #C0392B;
+
+  --font-sans: 'Lato', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-sans bg-white text-brand-navy overflow-x-hidden;
+}
+
+h1, h2, h3, h4 {
+  @apply font-serif;
+}
+
+@keyframes pulse-gold {
+  0%, 100% { box-shadow: 0 8px 30px rgba(201,168,76,0.35); }
+  50% { box-shadow: 0 8px 50px rgba(201,168,76,0.6); }
+}
+
+.btn-pulse {
+  animation: pulse-gold 2.5s ease-in-out infinite;
+}
+
+.btn-pulse:hover {
+  animation: none;
+}
