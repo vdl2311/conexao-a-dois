@@ -22,7 +22,7 @@ export function StickyBar() {
         Guia Completo — <strong className="text-brand-gold font-bold">R$ 37,90</strong>
       </span>
       <PrimaryButton href="https://pay.hotmart.com/N105586857E" className="!animate-none py-3 px-6 text-[15px] max-sm:px-4 max-sm:py-2">
-        TOMAR POSSE
+        QUERO ACESSAR
       </PrimaryButton>
     </div>
   );

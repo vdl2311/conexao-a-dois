@@ -65,11 +65,11 @@ export function Pricing() {
             </div>
 
             <PrimaryButton className="block w-full mt-2 max-sm:px-2 max-sm:text-[15px]" href="https://pay.hotmart.com/N105586857E">
-              QUERO TOMAR POSSE DESSA MUDANÇA NO MEU LAR
+              QUERO ACESSAR O GUIA
             </PrimaryButton>
 
             <div className="text-[15px] leading-[1.5] text-brand-gray mt-4 text-center">
-              Ao adquirir, você não está apenas comprando um material, você está selando um propósito de restauração para a sua família.
+              Dê um passo prático para enriquecer os momentos de conexão da sua família.
             </div>
 
             <div className="flex justify-center gap-4 mt-6 flex-wrap">

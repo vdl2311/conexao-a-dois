@@ -68,10 +68,10 @@ export function Hero() {
         className="mt-12 flex flex-col items-center gap-3 w-full"
       >
         <PrimaryButton href="https://pay.hotmart.com/N105586857E" className="max-sm:px-6 max-sm:text-[15px]">
-          QUERO TOMAR POSSE DESSA MUDANÇA NO MEU LAR
+          QUERO ACESSAR O GUIA
         </PrimaryButton>
         <div className="text-[15px] sm:text-[16px] leading-[1.6] text-white/70 text-center max-w-[550px] mt-2">
-          Ao adquirir, você não está apenas comprando um material, você está selando um propósito de restauração para a sua família.
+          Dê um passo prático para enriquecer os momentos de conexão da sua família.
         </div>
       </motion.div>
     </section>
