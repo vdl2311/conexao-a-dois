@@ -27,18 +27,20 @@ import { CookieConsent } from './components/CookieConsent';
 function LandingPage() {
   return (
     <>
-      <Hero />
-      <Purpose />
-      <Pain />
-      <Solution />
-      <PropheticCommitment />
-      <Days />
-      <Topics />
-      <ForWhom />
-      <Testimonials />
-      <Pricing />
-      <FAQ />
-      <FinalCTA />
+      <main>
+        <Hero />
+        <Purpose />
+        <Pain />
+        <Solution />
+        <PropheticCommitment />
+        <Days />
+        <Topics />
+        <ForWhom />
+        <Testimonials />
+        <Pricing />
+        <FAQ />
+        <FinalCTA />
+      </main>
       <Footer />
       <StickyBar />
     </>

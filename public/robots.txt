@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://conexaoadois.com.br/sitemap.xml
