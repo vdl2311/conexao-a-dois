@@ -14,7 +14,7 @@ import { Hero } from './components/Hero';
 import { Pain } from './components/Pain';
 import { Pricing } from './components/Pricing';
 import { PropheticCommitment } from './components/PropheticCommitment';
-import { Purpose } from './components/Purpose';
+import { FreeSample } from './components/FreeSample';
 import { Solution } from './components/Solution';
 import { StickyBar } from './components/StickyBar';
 import { Testimonials } from './components/Testimonials';
@@ -29,17 +29,7 @@ function LandingPage() {
     <>
       <main>
         <Hero />
-        <Purpose />
-        <Pain />
-        <Solution />
-        <PropheticCommitment />
-        <Days />
-        <Topics />
-        <ForWhom />
-        <Testimonials />
-        <Pricing />
-        <FAQ />
-        <FinalCTA />
+        <FreeSample />
       </main>
       <Footer />
       <StickyBar />

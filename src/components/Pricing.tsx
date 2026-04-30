@@ -33,6 +33,24 @@ export function Pricing() {
             
             <p className="text-[15px] text-brand-gray mb-7">Pagamento único · Acesso imediato e vitalício</p>
 
+            <div className="bg-brand-cream/50 rounded-xl p-6 mb-8 border border-brand-gold/20">
+              <h4 className="text-brand-navy font-serif text-[18px] mb-4">Por que este investimento?</h4>
+              <ul className="text-left space-y-3">
+                <li className="text-[14px] text-brand-gray flex items-start gap-2 italic">
+                  <span className="text-brand-gold">•</span>
+                  Custa menos que um jantar de delivery que vocês pedem quando estão cansados.
+                </li>
+                <li className="text-[14px] text-brand-gray flex items-start gap-2 italic">
+                  <span className="text-brand-gold">•</span>
+                  Representa menos de 10% do valor de uma única sessão de terapia de casal.
+                </li>
+                <li className="text-[14px] text-brand-gray flex items-start gap-2 italic">
+                  <span className="text-brand-gold">•</span>
+                  Você paga pela curadoria: não precisa pensar "sobre o que vamos falar hoje".
+                </li>
+              </ul>
+            </div>
+
             <ul className="text-left my-6">
               <li className="text-[16px] py-2.5 border-b border-[#F0EBE0] flex items-center gap-3 text-brand-navy before:content-['✓'] before:text-brand-gold before:font-bold before:text-[18px] before:shrink-0">
                 Guia completo em PDF (mais de 50 páginas)
