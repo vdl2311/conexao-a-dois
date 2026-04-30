@@ -24,6 +24,7 @@ export function Pricing() {
             <p className="text-[17px] text-brand-gray mb-7">Guia Completo de Terapia Preventiva Conjugal</p>
             
             <p className="text-[18px] text-brand-gray line-through mb-1">De R$ 67,00</p>
+            <p className="text-[14px] text-brand-gold font-bold mb-1">Para ajudar o maior número de famílias, o valor hoje é:</p>
             
             <div className="flex items-baseline justify-center gap-1.5 mb-1.5">
               <span className="text-[22px] text-brand-navy font-bold pt-2">R$</span>

@@ -150,9 +150,19 @@ export function FreeSample() {
                <p className="text-[18px] sm:text-[20px] text-white font-serif italic mb-6 leading-[1.6] max-w-[600px] mx-auto">
                  "Você acabou de dar o primeiro passo. Não deixe a rotina engolir sua conexão novamente."
                </p>
-               <p className="text-white/70 text-[16px] mb-8 max-w-[600px] mx-auto leading-[1.7]">
-                 Libere agora o <strong>Ciclo de 21 Dias de Reconexão</strong> e os capítulos exclusivos que nenhum devocional tradicional ousa tocar: <strong>Finanças, Intimidade e Comunicação Real</strong>.
-               </p>
+               <div className="flex flex-col items-center mb-8">
+                 <div className="flex items-center gap-3 mb-2">
+                   <span className="text-white/40 line-through text-[18px]">R$ 67,00</span>
+                   <span className="bg-brand-gold text-brand-navy text-[12px] font-bold px-2 py-0.5 rounded tracking-wider uppercase">Oferta Especial</span>
+                 </div>
+                 <div className="text-white text-[48px] font-serif leading-none mb-4">
+                   <span className="text-[20px] align-top mr-1">R$</span>
+                   37,90
+                 </div>
+                 <p className="text-white/60 text-[14px] max-w-[400px] mx-auto italic">
+                   "Para ajudar o maior número de famílias a restaurarem sua conexão, reduzimos o investimento por tempo limitado."
+                 </p>
+               </div>
                <PrimaryButton href="https://pay.hotmart.com/N105586857E" className="w-full max-w-[400px]">
                  QUERO ACESSAR O GUIA COMPLETO
                </PrimaryButton>

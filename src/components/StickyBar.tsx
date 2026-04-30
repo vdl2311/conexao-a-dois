@@ -23,9 +23,12 @@ export function StickyBar() {
     <div 
       className={`fixed bottom-0 left-0 right-0 bg-brand-navy border-t-2 border-brand-gold py-3 px-5 flex items-center justify-center gap-5 z-[999] flex-wrap transition-transform duration-400 ease-in-out ${isVisible ? 'translate-y-0' : 'translate-y-full'} max-sm:gap-3`}
     >
-      <span className="text-white text-[16px] max-sm:text-[14px]">
-        Guia Completo — <strong className="text-brand-gold font-bold">R$ 37,90</strong>
-      </span>
+      <div className="flex items-center gap-3">
+        <span className="text-white/40 line-through text-[13px] max-sm:hidden">R$ 67,00</span>
+        <span className="text-white text-[16px] max-sm:text-[14px]">
+          Guia Completo — <strong className="text-brand-gold font-bold">R$ 37,90</strong>
+        </span>
+      </div>
       <PrimaryButton href="https://pay.hotmart.com/N105586857E" className="!animate-none py-3 px-6 text-[15px] max-sm:px-4 max-sm:py-2 max-sm:text-[13px]">
         QUERO ACESSAR
       </PrimaryButton>
