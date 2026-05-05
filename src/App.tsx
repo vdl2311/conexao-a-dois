@@ -29,10 +29,8 @@ function LandingPage() {
     <>
       <main>
         <Hero />
-        <FreeSample />
       </main>
       <Footer />
-      <StickyBar />
     </>
   );
 }
