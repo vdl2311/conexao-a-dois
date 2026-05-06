@@ -57,7 +57,7 @@ export function FunnelChat({ isOpen, onClose }: FunnelChatProps) {
       if (
         lowerResponse.includes("21 dias") || 
         lowerResponse.includes("guia") || 
-        lowerResponse.includes("valha a pena começar") || 
+        lowerResponse.includes("37,90") || 
         response.includes("hotmart.com")
       ) {
         setShowStickyCTA(true);
