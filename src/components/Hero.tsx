@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'motion/react';
 import { PrimaryButton } from './Shared';
-import { FunnelChat } from './FunnelChat';
+import { FunnelQuiz } from './FunnelQuiz';
 
 export function Hero() {
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -50,7 +50,7 @@ export function Hero() {
         </PrimaryButton>
       </motion.div>
 
-      <FunnelChat isOpen={isChatOpen} onClose={() => setIsChatOpen(false)} />
+      <FunnelQuiz isOpen={isChatOpen} onClose={() => setIsChatOpen(false)} />
     </section>
   );
 }
