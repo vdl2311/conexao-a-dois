@@ -4,9 +4,12 @@ let genAI: GoogleGenAI | null = null;
 
 function getGenAI() {
   if (!genAI) {
-    const apiKey = process.env.GEMINI_API_KEY;
+    // Tenta pegar a chave do VITE_GEMINI_API_KEY (padrão do Vite no Vercel) 
+    // ou do GEMINI_API_KEY (padrão do AI Studio)
+    const apiKey = import.meta.env.VITE_GEMINI_API_KEY || (typeof process !== 'undefined' && process.env ? process.env.GEMINI_API_KEY : undefined);
+    
     if (!apiKey) {
-      throw new Error("GEMINI_API_KEY process.env variable is required");
+      throw new Error("A chave da API (VITE_GEMINI_API_KEY) não foi encontrada nas variáveis de ambiente. Configure no Vercel como VITE_GEMINI_API_KEY.");
     }
     genAI = new GoogleGenAI({ apiKey });
   }

@@ -25,8 +25,9 @@ export function FunnelChat({ isOpen, onClose }: FunnelChatProps) {
           setChat(newChat);
           const response = await sendMessageToChat(newChat, "Inicie a conversa executando APENAS o Passo 1 exatamente como instruído na árvore.");
           setMessages([{ role: 'model', text: response }]);
-        } catch (error) {
-          setMessages([{ role: 'model', text: "Desculpe, tive um problema ao iniciar a conversa." }]);
+        } catch (error: any) {
+          const errMsg = error?.message || "Erro desconhecido";
+          setMessages([{ role: 'model', text: `Desculpe, tive um problema ao iniciar a conversa. Detalhe técnico: ${errMsg}` }]);
         } finally {
           setIsLoading(false);
         }
@@ -62,8 +63,9 @@ export function FunnelChat({ isOpen, onClose }: FunnelChatProps) {
       ) {
         setShowStickyCTA(true);
       }
-    } catch (error) {
-      setMessages(prev => [...prev, { role: 'model', text: "Desculpe, tive um problema técnico. Pode tentar novamente?" }]);
+    } catch (error: any) {
+      const errMsg = error?.message || "Erro desconhecido";
+      setMessages(prev => [...prev, { role: 'model', text: `Desculpe, tive um problema técnico. Detalhe: ${errMsg}` }]);
     } finally {
       setIsLoading(false);
     }
