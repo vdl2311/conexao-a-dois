@@ -223,20 +223,20 @@ export function FunnelQuiz({ isOpen, onClose }: FunnelQuizProps) {
         if (heardAnswer === 'Sim' && topic === 'Comunicação') {
           microMirror = "Se você sente que evita certas conversas para não gerar conflito, ou já tentou se expressar e não foi compreendido(a)... isso explica exatamente o momento atual da sua relação.";
         } else if (topic === 'Finanças') {
-          microMirror = "Se você sente que a pressão financeira tem gerado um peso não dito, e evita falar sobre dinheiro para não criar atritos... isso explica exatamente a tensão silenciosa na relação.";
+          microMirror = "Se as conversas sobre dinheiro começaram a gerar tensão, ou vocês evitam tocar no assunto para não criar atritos… isso é um sinal claro de desgaste emocional acumulado.";
         } else if (topic === 'Intimidade') {
-          microMirror = "Se você sente falta daquela cumplicidade natural e percebe que estão deixando a intimidade de lado pela rotina corrida... isso explica exatamente a distância que vem sentindo.";
+          microMirror = "Se a falta de intimidade virou o 'normal', e vocês percebem que estão se distanciando cada vez mais devido à rotina… isso é um sinal claro de distanciamento progressivo.";
         } else {
-          microMirror = "Se você sente que vocês têm guardado coisas para si e preferem silenciar a discutir, para não gerar atrito... isso explica exatamente o distanciamento atual da relação.";
+          microMirror = "Se vocês têm guardado coisas para si e preferem o silêncio para não gerar atritos… isso é um sinal forte da desconexão emocional atual.";
         }
 
         let topicFocus = "";
         if (topic === 'Comunicação' || heardAnswer === 'Sim') {
-          topicFocus = "A frustração de não se sentir ouvido(a), somada ao medo de gerar atritos, cria barreiras invisíveis — e com o tempo, vocês deixam de ser um time.";
+          topicFocus = "A frustração de não se sentir ouvido(a), somada ao medo de gerar atritos, cria uma desconexão emocional — e com o tempo, vocês deixam de ser um time.";
         } else if (topic === 'Finanças') {
-          topicFocus = "A pressão silenciosa e o receio de tocar no assunto dinheiro sem gerar brigas criam barreiras invisíveis — e com o tempo, a parceria vira só divisão de contas.";
+          topicFocus = "A pressão financeira não dita e o receio de tocar no assunto dinheiro sem gerar brigas geram um afastamento gradual — e com o tempo, a parceria vira só divisão de contas.";
         } else if (topic === 'Intimidade') {
-          topicFocus = "O distanciamento físico e a falta daquelas trocas genuínas do início criam barreiras invisíveis — e com o tempo, vocês viram bons amigos morando juntos.";
+          topicFocus = "O distanciamento físico e a falta daquelas trocas genuínas do início geram um desgaste acumulado — e com o tempo, vocês viram só bons amigos morando juntos.";
         }
 
         return (
@@ -248,99 +248,118 @@ export function FunnelQuiz({ isOpen, onClose }: FunnelQuizProps) {
             className="flex flex-col h-full justify-start overflow-y-auto pr-2 pb-10"
           >
             {/* 1. Diagnóstico Claro */}
-            <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-5 mb-6">
-              <h2 className="text-red-400 font-bold text-lg mb-2 uppercase tracking-wide">
-                Seu Resultado Oficial{userName.trim() ? `, ${userName.trim()}` : ''}:
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 mb-8 text-center">
+              <h2 className="text-brand-gold font-bold text-xs mb-4 uppercase tracking-[0.2em]">
+                Seu Resultado Oficial{userName.trim() ? `, ${userName.trim()}` : ''}
               </h2>
-              <p className="text-white text-xl font-serif font-semibold leading-tight mb-3">
+              <p className="text-white text-2xl md:text-3xl font-serif font-medium leading-tight mb-5">
                 {diagnosticTitle}
               </p>
               
-              <p className="text-white/90 leading-relaxed text-md font-medium italic mb-4">
+              <div className="w-12 h-[1px] bg-brand-gold/30 mx-auto mb-5"></div>
+              
+              <p className="text-brand-gold leading-relaxed text-base md:text-[17px] font-medium mb-5">
                 {microMirror}
               </p>
 
-              <p className="text-white/80 leading-relaxed text-sm mb-3">
+              <p className="text-white/70 leading-relaxed text-sm mb-4">
                 {diagnosticDesc}
               </p>
               
-              <p className="text-white/80 leading-relaxed text-sm">
+              <p className="text-white/70 leading-relaxed text-sm">
                 {topicFocus}
               </p>
             </div>
             
             {/* 2. Amplificação da Dor (Personalizada) + Urgência */}
-            <div className="mb-6">
-              <p className="text-white/90 text-lg mb-4 leading-relaxed">
+            <div className="mb-10 text-center px-2">
+              <p className="text-white/90 text-lg mb-6 leading-relaxed">
                 Pequenas discussões, menos conexão, rotina pesada… <br/>
-                <strong className="text-white">Isso não é falta de amor — é falta de direcionamento emocional.</strong>
+                <strong className="text-white font-medium">Isso não é falta de amor — é falta de direcionamento emocional.</strong>
               </p>
-              <p className="text-red-300/90 text-md font-medium bg-red-900/20 p-3 rounded border border-red-900/30">
-                E quanto mais tempo isso continua, mais difícil se torna recuperar a conexão natural.
-              </p>
+              <div className="inline-block bg-white/5 px-6 py-3 rounded-full border border-white/10">
+                <p className="text-white/70 text-[13px] md:text-sm font-medium">
+                  E quanto mais tempo isso continua, mais difícil se torna recuperar a conexão natural.
+                </p>
+              </div>
             </div>
 
             {/* 3. A Ponte e a Solução Tangível */}
-            <div className="border-l-4 border-brand-gold pl-4 py-2 mb-8 bg-brand-gold/5 rounded-r">
-              <p className="text-white text-lg font-medium mb-2">
-                Foi exatamente para interromper esse desgaste silencioso que criamos:
+            <div className="mb-10 text-center px-4">
+              <p className="text-white/60 text-xs uppercase tracking-widest mb-3">
+                Para interromper o afastamento gradual
               </p>
-              <h3 className="text-brand-gold font-bold text-xl mb-2">
-                Conexão a Dois — Guia de Terapia Preventiva Conjugal
+              <h3 className="text-brand-gold font-serif text-2xl md:text-3xl leading-tight mb-4">
+                Conexão a Dois<br/>
+                <span className="text-white text-lg md:text-xl font-sans font-medium mt-2 block">Guia de Terapia Preventiva</span>
               </h3>
-              <p className="text-white/80 text-md">
-                Um plano guiado de 21 dias com ações simples e práticas, pensado para reconstruir a conexão mesmo em rotinas cansativas.
+              <p className="text-white/70 text-[15px] leading-relaxed max-w-[320px] mx-auto">
+                O método de 21 dias utiliza pequenas ações emocionais guiadas para interromper padrões de desgaste e reconstruir a conexão do casal aos poucos.
               </p>
             </div>
 
             {/* 4. Benefícios Claros */}
-            <div className="mb-8">
-              <ul className="space-y-4">
-                <li className="flex items-start">
-                  <span className="text-brand-gold mr-3 text-lg">✨</span>
-                  <span className="text-white/90"><strong>Desperte sua relação</strong> (mesmo que hoje já pareça muito desgastada).</span>
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 mb-10">
+              <ul className="space-y-5">
+                <li className="flex items-start gap-4">
+                  <div className="w-5 h-5 flex items-center justify-center flex-shrink-0 rounded-full bg-brand-gold/10 text-brand-gold text-xs mt-0.5">✓</div>
+                  <span className="text-white/90 text-[15px] leading-relaxed"><strong>Desperte sua relação</strong> (mesmo que hoje pareça desgastada).</span>
                 </li>
-                <li className="flex items-start">
-                  <span className="text-brand-gold mr-3 text-lg">❤️</span>
-                  <span className="text-white/90"><strong>Reconstrua a intimidade</strong> sem forçar conversas difíceis.</span>
+                <li className="flex items-start gap-4">
+                  <div className="w-5 h-5 flex items-center justify-center flex-shrink-0 rounded-full bg-brand-gold/10 text-brand-gold text-xs mt-0.5">✓</div>
+                  <span className="text-white/90 text-[15px] leading-relaxed"><strong>Reconstrua a intimidade</strong> sem forçar conversas difíceis.</span>
                 </li>
-                <li className="flex items-start">
-                  <span className="text-brand-gold mr-3 text-lg">🛡️</span>
-                  <span className="text-white/90"><strong>Evite que a rotina destrua</strong> o que vocês construíram.</span>
+                <li className="flex items-start gap-4">
+                  <div className="w-5 h-5 flex items-center justify-center flex-shrink-0 rounded-full bg-brand-gold/10 text-brand-gold text-xs mt-0.5">✓</div>
+                  <span className="text-white/90 text-[15px] leading-relaxed"><strong>Evite que a rotina destrua</strong> o que vocês construíram.</span>
                 </li>
-                <li className="flex items-start">
-                  <span className="text-brand-gold mr-3 text-lg">🔥</span>
-                  <span className="text-white/90"><strong>Volte a sentir conexão de verdade</strong>.</span>
+                <li className="flex items-start gap-4">
+                  <div className="w-5 h-5 flex items-center justify-center flex-shrink-0 rounded-full bg-brand-gold/10 text-brand-gold text-xs mt-0.5">✓</div>
+                  <span className="text-white/90 text-[15px] leading-relaxed"><strong>Volte a sentir conexão de verdade</strong>.</span>
                 </li>
               </ul>
             </div>
 
-            {/* Prova Social Simples */}
-            <div className="flex items-center justify-center gap-2 mb-8 bg-[#151515] py-3 rounded-lg border border-white/5 shadow-inner">
-              <span className="text-white/70 text-sm font-medium">
-                Criado com base em padrões de dinâmicas reais.
-              </span>
+            {/* 5. Visualização do Futuro Desejado */}
+            <div className="mb-12 text-center px-6">
+              <p className="text-brand-gold text-xl md:text-2xl font-serif italic leading-relaxed">
+                "Imagine voltar a sentir leveza nas conversas, parceria nas decisões e conexão real no dia a dia."
+              </p>
             </div>
 
-            {/* Oferta Irrecusável */}
-            <div className="bg-gradient-to-br from-brand-gold/10 to-[#0a0a0a] p-6 rounded-xl border border-brand-gold/30 mb-8 text-center text-white relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-brand-gold/5 rounded-full blur-2xl -mr-10 -mt-10"></div>
-              <div className="flex flex-col items-center justify-center gap-1 mb-2 relative z-10">
-                <span className="text-white/50 line-through text-sm">De R$ 97,00</span>
-                <span className="text-brand-gold font-bold text-5xl tracking-tight my-1 shadow-black drop-shadow-md">R$ 37,90</span>
+            {/* Oferta e CTA Integrados */}
+            <div className="bg-[#0f0f0f] p-8 rounded-3xl border border-brand-gold/20 mb-4 text-center text-white relative shadow-2xl">
+              <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-gold text-brand-navy font-bold px-4 py-1.5 rounded-full text-[10px] uppercase tracking-[0.2em] shadow-lg">
+                Oferta Especial
               </div>
-              <p className="text-white/80 text-sm font-medium relative z-10 mt-2">Acesso imediato.</p>
-            </div>
+              
+              <div className="flex flex-col items-center justify-center mb-6 mt-2 relative z-10">
+                <span className="text-white/40 line-through text-xs mb-1">De R$ 97,00</span>
+                <span className="text-white font-bold text-5xl tracking-tight my-1">
+                  R$ <span className="text-brand-gold">37</span><span className="text-2xl text-brand-gold">,90</span>
+                </span>
+                <span className="text-white/60 text-xs font-medium mt-1">Acesso imediato aos 21 dias</span>
+              </div>
 
-            <a 
-              href="https://pay.hotmart.com/N105586857E" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="bg-brand-gold text-brand-navy w-full flex flex-col items-center justify-center gap-1 py-5 rounded-lg font-bold text-[18px] uppercase tracking-wide hover:bg-brand-gold/90 transition-all shadow-[0_0_25px_rgba(202,168,114,0.35)] hover:shadow-[0_0_35px_rgba(202,168,114,0.5)] transform hover:-translate-y-1"
-            >
-              <span>Quero Voltar a Me Conectar de Verdade</span>
-              <span className="text-xs font-medium text-brand-navy/70 normal-case tracking-normal">Acesso imediato aos 21 dias</span>
-            </a>
+              <a 
+                href="https://pay.hotmart.com/N105586857E" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="bg-brand-gold text-brand-navy w-full flex flex-col items-center justify-center gap-1 py-5 rounded-xl font-bold text-[17px] uppercase tracking-wide hover:bg-[#c2a167] transition-all transform hover:-translate-y-1 shadow-[0_4px_20px_rgba(202,168,114,0.3)] mb-8"
+              >
+                <span>Quero Voltar a Me Conectar</span>
+              </a>
+
+              {/* Prova Social Simples */}
+              <div className="flex flex-col items-center justify-center gap-2 pt-6 border-t border-white/10">
+                <div className="flex gap-1 text-brand-gold text-[10px] mb-1">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <span className="text-white/50 text-xs font-medium text-center leading-relaxed px-4">
+                  Casais relatam melhora na comunicação e redução das discussões já nos primeiros dias de aplicação.
+                </span>
+              </div>
+            </div>
           </motion.div>
         );
 
