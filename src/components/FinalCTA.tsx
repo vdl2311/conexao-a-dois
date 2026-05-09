@@ -17,7 +17,7 @@ export const FinalCTA = () => {
           viewport={{ once: true }}
           className="font-serif text-4xl md:text-7xl font-bold leading-[1.1] mb-8 text-brand-cream max-w-[780px] mx-auto"
         >
-          Vocês merecem mais do que <em className="italic text-brand-gold-soft non-italic">coexistir.</em>
+          Você não precisa de um casamento <em className="italic text-brand-gold-soft non-italic">perfeito.</em> Você precisa de uma conversa honesta.
         </motion.h2>
         <motion.p 
           initial={{ opacity: 0 }}
@@ -26,7 +26,7 @@ export const FinalCTA = () => {
           transition={{ delay: 0.2 }}
           className="text-brand-cream/60 text-lg md:text-xl max-w-[520px] mx-auto mb-14 font-light"
         >
-          Uma conversa honesta, em 5 minutos, pode abrir portas que estavam fechadas há anos. O guia já está pronto. Agora só falta a decisão.
+          O protocolo já está pronto. A pergunta que vai mudar o clima esta noite já está escrita. O que falta é a decisão de abrir.
         </motion.p>
         
         <motion.div
@@ -36,11 +36,10 @@ export const FinalCTA = () => {
            transition={{ delay: 0.3 }}
         >
           <a 
-            href="https://pay.hotmart.com/N105586857E" 
-            target="_blank"
+            href="#comprar" 
             className="inline-block bg-gradient-to-br from-brand-gold to-[#8C6520] text-white font-bold text-lg uppercase tracking-wider py-6 px-14 rounded-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_40px_rgba(201,150,58,0.4)] active:scale-95"
           >
-            Começar Agora por R$ 37,90
+            Começar Hoje por R$ 37,90 &rarr;
           </a>
         </motion.div>
         

@@ -2,12 +2,12 @@ import { motion } from 'motion/react';
 
 export const Mirror = () => {
   const items = [
-    { text: "Tentamos fazer devocional juntos, mas a rotina engoliu. A gente desistiu depois de 3 dias e nunca mais tentou.", tag: "💬 Comunicação" },
-    { text: "Toda vez que o assunto é dinheiro, a conversa acaba mal. Então a gente simplesmente parou de falar sobre isso.", tag: "💸 Finanças" },
-    { text: "Sinto que ele está do meu lado mas não está presente. A gente dorme junto e eu me sinto sozinha.", tag: "❤️ Intimidade" },
-    { text: "Eu amo ele. Mas quando foi a última vez que a gente teve uma conversa de verdade? Não lembro.", tag: "💬 Conexão" },
-    { text: "A intimidade física sumiu. Nenhum dos dois sabe como falar sobre isso sem parecer crítica ou pressão.", tag: "❤️ Intimidade" },
-    { text: "A gente repete as mesmas brigas. Meses depois, a mesma discussão. Como se nunca chegasse a lugar nenhum.", tag: "💬 Comunicação" },
+    { text: "Eu começo o assunto e ele responde com uma palavra. Então eu desisto. Todo dia é assim.", tag: "💬 Comunicação" },
+    { text: "Descobri uma dívida que ele escondia. Não por maldade — por vergonha. Mas dói igual.", tag: "💸 Finanças" },
+    { text: "Eu sinto falta de intimidade. Mas falar sobre isso parece errado, como se eu fosse exigente demais.", tag: "❤️ Intimidade" },
+    { text: "Às vezes penso: se eu sumisse por um dia, quanto tempo até ele perceber que algo mudou?", tag: "💬 Conexão" },
+    { text: "Tentei um devocional. Durou três dias. Depois a rotina engoliu e nenhum dos dois tentou mais.", tag: "🙏 Espiritualidade" },
+    { text: "A gente repete a mesma briga há anos. Nunca chega a lugar nenhum. É como gritar num poço.", tag: "💬 Comunicação" },
   ];
 
   return (
@@ -16,10 +16,13 @@ export const Mirror = () => {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="font-serif text-3xl md:text-5xl text-brand-cream font-semibold max-w-2xl mx-auto mb-16 leading-tight"
+        className="font-serif text-3xl md:text-5xl text-brand-cream font-semibold max-w-2xl mx-auto mb-4 leading-tight"
       >
-        Se alguma dessas frases passou pela sua cabeça — este guia é para você.
+        Se algum desses pensamentos passou pela sua cabeça esta semana —
       </motion.h2>
+      <p className="text-brand-cream/40 text-[14px] md:text-base mb-16 tracking-[1px] uppercase font-bold">
+        este guia foi feito para você.
+      </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px max-w-5xl mx-auto">
         {items.map((item, index) => (

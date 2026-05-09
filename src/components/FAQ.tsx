@@ -3,28 +3,28 @@ import { motion } from 'motion/react';
 export const FAQ = () => {
   const faqs = [
     {
-      q: 'Precisa estar em crise para usar o guia?',
-      a: 'Pelo contrário — ele foi feito para terapia preventiva. Funciona melhor exatamente para casais que ainda se amam, mas estão sentindo a conexão enfraquecer. Quanto antes, menor o desgaste a reverter.'
+      q: 'E se ele não quiser fazer junto?',
+      a: 'Comece você. Leia a pergunta do dia em voz alta — casualmente, sem pressão, sem cobrar. Muitos casais relatam que bastou o marido ouvir a primeira pergunta para querer responder. O protocolo foi projetado para despertar — não para exigir. E às vezes, quem abre a conversa primeiro muda o clima do ambiente todo.'
     },
     {
-      q: 'E se meu cônjuge não quiser participar?',
-      a: 'Comece você. Leia em voz alta a pergunta do dia — casualmente, sem pressão. Muitos casais relatam que bastou o parceiro ouvir a primeira pergunta para querer responder. O guia foi projetado para despertar, não para exigir.'
+      q: 'Precisa estar em crise para funcionar?',
+      a: 'Pelo contrário — foi feito para terapia preventiva. Funciona melhor para casais que ainda se amam mas estão sentindo a conexão enfraquecer. Quanto antes você usar, menor o desgaste a reverter.'
     },
     {
       q: 'É muito religioso? Funciona para casais não-evangélicos?',
-      a: 'O guia tem base cristã honesta, mas os prompts de diálogo funcionam para qualquer casal. O foco é na conversa real entre dois — não em regras religiosas ou doutrina.'
+      a: 'O guia tem base cristã honesta, mas os prompts foram escritos para qualquer casal. O foco é na conversa real entre dois — não em doutrinas ou regras religiosas.'
+    },
+    {
+      q: 'Realmente cabe em 5 minutos?',
+      a: 'Foi calibrado especificamente para isso. Uma leitura curta, um prompt de diálogo, uma oração simples e uma micro-ação — tudo em 5 minutos. A consistência importa mais do que a duração.'
     },
     {
       q: 'Como recebo o material?',
-      a: 'Imediatamente após a confirmação do pagamento, você recebe o link de download por e-mail. Funciona em qualquer celular, tablet ou computador — sem instalar nada.'
+      a: 'Imediatamente após a confirmação do pagamento, você recebe o link de download por e-mail. Funciona em qualquer dispositivo — sem instalar nada.'
     },
     {
       q: 'E se não funcionar para nós?',
-      a: 'Você tem 7 dias de garantia total e incondicional. Se por qualquer motivo o guia não agregar, basta enviar um e-mail que devolvemos 100% do valor. Sem questionamentos, sem burocracia.'
-    },
-    {
-      q: 'Temos pouco tempo. Realmente cabe em 5 minutos?',
-      a: 'Foi projetado especificamente para isso. Cada dia tem uma leitura curta, um prompt de diálogo, uma oração simples e uma micro-ação — tudo calibrado para 5 minutos. Sem pressão, sem perfeição. Apenas consistência.'
+      a: '7 dias de garantia total e incondicional. Se por qualquer motivo o protocolo não agregar, devolvemos 100% do valor. Sem questionamentos, sem burocracia.'
     }
   ];
 

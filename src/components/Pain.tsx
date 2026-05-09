@@ -19,7 +19,7 @@ export const Pain = () => {
           transition={{ delay: 0.1 }}
           className="font-serif text-3xl md:text-5xl font-bold leading-tight mb-10 text-brand-text"
         >
-          É uma terça-feira qualquer. 22h47.
+          São 22h47. Ele está no celular. Você está no celular. E a distância entre vocês mede exatamente 30 centímetros.
         </motion.h2>
         
         <motion.div 
@@ -30,26 +30,33 @@ export const Pain = () => {
           className="space-y-6 text-brand-muted text-lg leading-[1.9] font-light"
         >
           <p>
-            Ele está no celular. Ela está no celular. A televisão fala sozinha. Os filhos já dormiram. <strong className="text-brand-text font-medium">São os primeiros 20 minutos a sós do dia</strong> — e nenhum dos dois sabe o que dizer.
+            Você é quem pesquisou isso. Quem chegou até essa página. Porque você carrega o casamento — não por obrigação, mas porque <strong className="text-brand-text font-medium">você enxerga o que está acontecendo antes dele.</strong>
           </p>
           <p>
-            Não é que não haja assunto. É que os assuntos reais parecem grandes demais para uma hora dessas. Dinheiro sempre vira briga. Intimidade virou silêncio. E o "como foi seu dia?" perdeu o significado faz tempo.
+            Você quer reconectar. Mas toda vez que tenta iniciar uma conversa real, ou ele desvia, ou vira briga, ou o momento passa e você engole de volta.
           </p>
 
           <div className="border-l-4 border-brand-gold bg-brand-cream p-8 my-10 rounded-r-lg">
             <p className="font-serif italic text-2xl text-brand-text leading-relaxed">
-              "A gente não briga mais. A gente simplesmente... parou de conversar."
+              "Eu não quero um casamento perfeito. Eu só quero sentir que ele está presente."
             </p>
           </div>
 
           <p>
-            Isso não é crise. É algo mais silencioso e mais perigoso: é a <strong className="text-brand-text font-medium">erosão lenta da conexão</strong>. O casal continua junto, continua se respeitando, continua indo à igreja — mas perdeu a intimidade emocional que mantinha tudo de pé.
+            Você já tentou devocional. Tentou a metodologia do fim de semana. Tentou terapia — ou pensou em tentar, mas R$ 200 a sessão duas vezes por mês não cabe no orçamento.
           </p>
           <p>
-            E os devocionais tradicionais? Pedem mais leitura, mais tempo, mais disciplina — exatamente o que o casal exausto não tem. Nenhum deles fala abertamente sobre falta de sexo, brigas por dinheiro ou a sensação de morar com um estranho.
+            E nada fala sobre o que realmente dói: <strong className="text-brand-text font-medium">a intimidade que sumiu sem aviso.</strong> A dívida que ele esconde com vergonha. A sensação de morar com um homem que você ama mas não conhece mais.
           </p>
+
+          <div className="bg-brand-rose/5 border border-brand-rose-soft/20 rounded-xl p-8 my-10">
+            <p className="text-[15px] md:text-[16px] text-brand-text leading-relaxed">
+              <strong className="text-brand-rose font-bold">E ainda tem a culpa religiosa.</strong> Você sente que querer mais — mais presença, mais intimidade física, mais transparência financeira — é ingratidão. Que você deveria "ser grata pelo que tem." Então você engole. E o silêncio cresce.
+            </p>
+          </div>
+
           <p>
-            <strong className="text-brand-text font-medium">Conexão a Dois</strong> nasceu para preencher esse vazio. Com honestidade. Com coragem. E em 5 minutos por dia.
+            <strong className="text-brand-text font-medium">Conexão a Dois</strong> existe para você. Não para o casal genérico. Para você, que está aqui às 22h, com o coração pesado, procurando uma saída que não seja terapia cara nem mais um devocional bonito que dura três dias.
           </p>
         </motion.div>
       </div>

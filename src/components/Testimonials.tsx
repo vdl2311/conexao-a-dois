@@ -5,21 +5,21 @@ export const Testimonials = () => {
     {
       avatar: 'RC',
       color: 'bg-brand-gold',
-      text: '"No Dia 8, a pergunta era sobre transparência financeira. Meu marido ficou em silêncio por uns 10 segundos. Depois confessou uma dívida que ele carregava há dois anos com vergonha. Chorei — não de raiva, mas de alívio. Finalmente estávamos falando de verdade. Esse dia valeu mais do que qualquer sessão de terapia que tentamos antes."',
+      text: '"No Dia 8 — a Conversa do Dinheiro — meu marido ficou em silêncio por 10 segundos. Depois confessou uma dívida que carregava há dois anos com vergonha. **Chorei. Não de raiva — de alívio. Finalmente estávamos falando de verdade.** Valeu mais do que qualquer sessão de terapia que tentamos."',
       name: 'Roberta & Carlos M.',
       detail: 'Casados há 9 anos · Belo Horizonte, MG'
     },
     {
       avatar: 'TA',
       color: 'bg-brand-sage',
-      text: '"A semana de intimidade foi a mais difícil — e a mais libertadora. No Dia 19, ele me perguntou qual expectativa minha ele nunca tinha ouvido. Eu falei coisas que guardei por 6 anos. Não foi perfeito. Mas foi real. E foi o começo de uma conversa que ainda está acontecendo."',
+      text: '"Fui eu que comprei. Ele achou que ia durar 3 dias. Na Semana da Intimidade, a pergunta do Dia 19 me fez falar coisas que guardei por 6 anos. **Não foi perfeito. Mas foi real. E foi o começo de uma conversa que ainda está acontecendo.**"',
       name: 'Tatiane & Alexandre P.',
       detail: 'Casados há 11 anos · Goiânia, GO'
     },
     {
       avatar: 'DF',
       color: 'bg-brand-rose',
-      text: '"Minha esposa sugeriu. Eu achei que ia ser mais um devocional que a gente faria por 3 dias e esquecia. No Dia 4 eu me vi pedindo desculpa por um padrão de conflito que eu nunca tinha reconhecido. Isso nunca tinha acontecido em 7 anos. O guia faz as perguntas que a gente não teria coragem de fazer sozinho."',
+      text: '"Minha esposa comprou. Eu achei que não ia funcionar. **No Dia 4, me vi pedindo desculpa por um padrão de conflito que nunca tinha reconhecido em 7 anos de casamento.** O protocolo faz as perguntas que a gente não teria coragem de fazer sozinho."',
       name: 'Diego & Fernanda L.',
       detail: 'Casados há 7 anos · Curitiba, PR'
     }

@@ -17,18 +17,18 @@ export const Pricing = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
-          className="font-serif text-3xl md:text-5xl font-bold leading-tight mb-4 text-brand-text max-w-2xl mx-auto"
+          className="font-serif text-3xl md:text-5xl font-bold leading-tight mb-4 text-brand-text max-w-3xl mx-auto"
         >
-          Uma conversa hoje. Um casamento mais forte amanhã.
+          Você já esperou tempo suficiente pelo momento certo.
         </motion.h2>
         <motion.p 
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="text-brand-muted text-lg max-w-[520px] mx-auto mb-16"
+          className="text-brand-muted text-lg max-w-[550px] mx-auto mb-16"
         >
-          O custo de não ter essa conversa é alto demais para continuar esperando o momento certo.
+          O momento certo não vem. Ele é criado — em 5 minutos, hoje à noite, com a pessoa que você escolheu.
         </motion.p>
         
         <motion.div 
@@ -45,7 +45,7 @@ export const Pricing = () => {
           </div>
 
           <p className="text-[11px] font-bold uppercase tracking-[4px] text-brand-muted mb-4 opacity-70">
-            Conexão a Dois — Guia Completo
+            Conexão a Dois — Protocolo das 3 Conversas
           </p>
           
           <div className="font-serif text-[80px] font-bold text-brand-dark leading-none flex items-start justify-center mb-1">
@@ -60,10 +60,11 @@ export const Pricing = () => {
           
           <div className="text-left space-y-4 mb-10">
             {[
-              "Guia completo — 21 dias de desafio conjugal",
-              "3 semanas temáticas: Comunicação, Finanças e Intimidade",
-              "Prompts aprofundados de cada tema",
-              "Sessão diagnóstica — onde estamos como casal?",
+              "O Protocolo das 3 Conversas — 21 dias completos",
+              "Semana 1: A Conversa da Comunicação (Dias 1–7)",
+              "Semana 2: A Conversa do Dinheiro (Dias 8–14)",
+              "Semana 3: A Conversa da Intimidade (Dias 15–21)",
+              "Diagnóstico conjugal — sessão de abertura",
               "PDF para celular, tablet e computador — sem app"
             ].map((item, i) => (
               <div key={i} className="flex items-center gap-3 text-[14.5px] text-brand-text">
@@ -80,7 +81,7 @@ export const Pricing = () => {
             target="_blank"
             className="block w-full bg-gradient-to-br from-brand-gold to-[#8C6520] text-white font-bold text-lg uppercase tracking-wider py-5 px-8 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl animate-pulse-slow mb-5 active:scale-95"
           >
-            Sim — Hoje a Gente Conversa de Verdade &rarr;
+            Quero Ter Essa Conversa Hoje &rarr;
           </a>
           
           <p className="text-[12px] text-brand-muted mb-10">
@@ -92,7 +93,7 @@ export const Pricing = () => {
             <div>
               <div className="font-bold text-[14px] text-brand-sage mb-1 uppercase tracking-wider">Garantia total de 7 dias</div>
               <p className="text-[12.5px] text-brand-muted leading-relaxed">
-                Se em 7 dias você sentir que o guia não fez diferença nenhuma no seu casamento, devolvemos cada centavo. O risco é zero.
+                Se em 7 dias você sentir que o protocolo não fez nenhuma diferença, devolvemos 100% do valor. O risco é zero — e o casamento vale a tentativa.
               </p>
             </div>
           </div>
