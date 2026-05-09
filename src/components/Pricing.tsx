@@ -1,64 +1,102 @@
+import { motion } from 'motion/react';
+
 export const Pricing = () => {
   return (
-    <section className="bg-brand-cream py-24 px-6 text-center" id="comprar">
+    <section className="bg-white py-24 md:py-32 px-6 text-center" id="comprar">
       <div className="max-w-4xl mx-auto">
-        <p className="text-[10px] font-bold uppercase tracking-[5px] text-brand-rose mb-4">
+        <motion.span 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="text-brand-gold text-[11px] font-bold uppercase tracking-[5px] mb-4 block"
+        >
           Sua decisão
-        </p>
-        <h2 className="font-serif text-3xl md:text-5xl font-bold leading-tight mb-12 text-brand-text max-w-2xl mx-auto">
-          Invista no casamento hoje. O preço do silêncio é infinitamente maior.
-        </h2>
+        </motion.span>
+        <motion.h2 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.1 }}
+          className="font-serif text-3xl md:text-5xl font-bold leading-tight mb-4 text-brand-text max-w-2xl mx-auto"
+        >
+          Uma conversa hoje. Um casamento mais forte amanhã.
+        </motion.h2>
+        <motion.p 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2 }}
+          className="text-brand-muted text-lg max-w-[520px] mx-auto mb-16"
+        >
+          O custo de não ter essa conversa é alto demais para continuar esperando o momento certo.
+        </motion.p>
         
-        <div className="bg-white rounded-[24px] p-8 md:p-14 shadow-[0_20px_80px_rgba(0,0,0,0.1)] relative overflow-hidden before:absolute before:top-0 before:left-0 before:right-0 before:h-1 before:bg-gradient-to-r before:from-brand-gold before:via-brand-rose before:to-brand-sage text-left">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="order-2 md:order-1">
-              <img 
-                src="mockup.png" 
-                alt="Guia Conexão a Dois" 
-                className="w-full h-auto rounded-xl shadow-lg border border-black/5"
-                referrerPolicy="no-referrer"
-              />
-            </div>
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3 }}
+          className="max-w-[500px] mx-auto bg-brand-cream rounded-[32px] p-10 md:p-14 border border-brand-gold/20 relative overflow-hidden shadow-sm"
+        >
+          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-gold via-brand-rose-soft to-brand-sage-soft" />
+          
+          <div className="absolute top-6 right-[-12px] bg-brand-rose text-white text-[10px] font-bold uppercase tracking-[2px] py-2 px-6 rounded-l-md shadow-lg after:content-[''] after:absolute after:right-0 after:bottom-[-6px] after:border-l-[12px] after:border-l-[#6B2929] after:border-bottom-[6px] after:border-bottom-transparent">
+            Lançamento
+          </div>
 
-            <div className="order-1 md:order-2">
-              <div className="inline-block bg-brand-rose text-white text-[10px] font-bold uppercase tracking-[3px] py-1.5 px-4 rounded-full mb-6">
-                Oferta de Lançamento
-              </div>
-              
-              <div className="font-serif text-[64px] font-black text-brand-warm-dark leading-none flex items-start mb-2">
-                <span className="text-2xl font-bold mt-2">R$</span>
-                37
-                <span className="text-2xl font-bold mt-2">,90</span>
-              </div>
-              
-              <p className="text-[13px] text-brand-text-muted mb-9">
-                Acesso vitalício · PDF imediato · Para os dois
-              </p>
-              
-              <a 
-                href="https://pay.hotmart.com/N105586857E" 
-                target="_blank"
-                className="block w-full bg-gradient-to-br from-brand-gold to-[#A07028] text-white font-bold text-lg uppercase tracking-wider py-5 px-8 rounded-xl transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_12px_40px_rgba(201,150,58,0.4)] animate-pulse-slow mb-5 active:scale-95 text-center"
-              >
-                ✦ Quero Reconectar Agora
-              </a>
-              
-              <p className="text-[13px] text-brand-text-muted mb-8 text-center md:text-left">
-                Pagamento 100% seguro · Pix, cartão ou boleto
-              </p>
-
-              <div className="flex items-start gap-4 p-5 bg-[#F0FAF4] rounded-xl border border-brand-sage/20">
-                <div className="text-3xl shrink-0">🛡️</div>
-                <div className="text-brand-sage font-bold text-[11px] uppercase tracking-wider leading-tight">
-                  Garantia de 7 dias
-                  <span className="block font-light text-brand-text-muted normal-case tracking-normal text-[12px] mt-1.5 opacity-80">
-                    Se em 7 dias você não sentir nenhuma diferença na conexão do seu casal, devolvemos cada centavo.
-                  </span>
+          <p className="text-[11px] font-bold uppercase tracking-[4px] text-brand-muted mb-4 opacity-70">
+            Conexão a Dois — Guia Completo
+          </p>
+          
+          <div className="font-serif text-[80px] font-bold text-brand-dark leading-none flex items-start justify-center mb-1">
+            <span className="text-3xl font-semibold mt-4 mr-1">R$</span>
+            37
+            <span className="text-3xl font-semibold mt-4 ml-1">,90</span>
+          </div>
+          
+          <p className="text-[13px] text-brand-muted mb-10">
+            Pagamento único · Acesso vitalício para os dois
+          </p>
+          
+          <div className="text-left space-y-4 mb-10">
+            {[
+              "Guia completo — 21 dias de desafio conjugal",
+              "3 semanas temáticas: Comunicação, Finanças e Intimidade",
+              "Prompts aprofundados de cada tema",
+              "Sessão diagnóstica — onde estamos como casal?",
+              "PDF para celular, tablet e computador — sem app"
+            ].map((item, i) => (
+              <div key={i} className="flex items-center gap-3 text-[14.5px] text-brand-text">
+                <div className="w-6 h-6 rounded-full bg-brand-sage/15 flex items-center justify-center text-[10px] text-brand-sage font-bold flex-shrink-0">
+                  ✓
                 </div>
+                {item}
               </div>
+            ))}
+          </div>
+          
+          <a 
+            href="https://pay.hotmart.com/N105586857E" 
+            target="_blank"
+            className="block w-full bg-gradient-to-br from-brand-gold to-[#8C6520] text-white font-bold text-lg uppercase tracking-wider py-5 px-8 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl animate-pulse-slow mb-5 active:scale-95"
+          >
+            Sim — Hoje a Gente Conversa de Verdade &rarr;
+          </a>
+          
+          <p className="text-[12px] text-brand-muted mb-10">
+            🔒 Ambiente 100% seguro · Pix, cartão ou boleto
+          </p>
+          
+          <div className="bg-white border border-brand-sage/25 rounded-2xl p-6 flex flex-col sm:flex-row items-start gap-5 text-left">
+            <div className="text-4xl">🛡️</div>
+            <div>
+              <div className="font-bold text-[14px] text-brand-sage mb-1 uppercase tracking-wider">Garantia total de 7 dias</div>
+              <p className="text-[12.5px] text-brand-muted leading-relaxed">
+                Se em 7 dias você sentir que o guia não fez diferença nenhuma no seu casamento, devolvemos cada centavo. O risco é zero.
+              </p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -2,6 +2,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Hero } from './components/Hero';
 import { Pain } from './components/Pain';
 import { Promise } from './components/Promise';
+import { Mirror } from './components/Mirror';
+import { Bridge } from './components/Bridge';
 import { WhatIsIt } from './components/WhatIsIt';
 import { Days } from './components/Days';
 import { Testimonials } from './components/Testimonials';
@@ -17,6 +19,8 @@ const HomePage = () => (
     <Hero />
     <Pain />
     <Promise />
+    <Mirror />
+    <Bridge />
     <WhatIsIt />
     <Days />
     <Testimonials />

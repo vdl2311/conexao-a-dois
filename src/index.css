@@ -1,34 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:wght@300;400;500;700&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-serif: "Playfair Display", serif;
-  --font-sans: "Lato", sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "DM Sans", sans-serif;
 
-  --color-brand-cream: #FAF6F0;
-  --color-brand-warm-dark: #1A1208;
-  --color-brand-gold: #C9963A;
-  --color-brand-gold-light: #E8C070;
-  --color-brand-rose: #A85555;
-  --color-brand-rose-light: #D4857A;
-  --color-brand-sage: #6B8C7A;
-  --color-brand-text: #2E1F0F;
-  --color-brand-text-muted: #6B5B4A;
+  --color-brand-cream: #FBF8F3;
+  --color-brand-dark: #130E07;
+  --color-brand-gold: #B8872E;
+  --color-brand-gold-soft: #D4A94E;
+  --color-brand-gold-pale: #F0DFB8;
+  --color-brand-rose: #8C3D3D;
+  --color-brand-rose-soft: #C4726A;
+  --color-brand-sage: #4A6B58;
+  --color-brand-sage-soft: #7DA98A;
+  --color-brand-text: #1E1509;
+  --color-brand-muted: #6B5B45;
 
-  --animate-pulse-slow: pulse-slow 2.4s ease-in-out infinite;
+  --animate-pulse-slow: pulse-slow 3s ease-in-out infinite;
 
   @keyframes pulse-slow {
-    0%, 100% { box-shadow: 0 12px 40px rgba(201, 150, 58, 0.35); }
-    50% { box-shadow: 0 16px 60px rgba(201, 150, 58, 0.6); }
+    0%, 100% { box-shadow: 0 8px 32px rgba(201, 150, 58, 0.3); }
+    50% { box-shadow: 0 12px 52px rgba(201, 150, 58, 0.6); }
   }
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     @apply bg-brand-cream text-brand-text font-sans font-light leading-relaxed overflow-x-hidden;
   }
 }
 
-.hero-pattern {
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C9963A' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+.noise {
+  position: absolute;
+  inset: 0;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 180px;
+}
+
+.hero-gradient {
+  background-image:
+    radial-gradient(ellipse 90% 70% at 15% 20%, rgba(184,135,46,0.12) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 80% at 90% 80%, rgba(140,61,61,0.12) 0%, transparent 55%);
+}
+
+.final-gradient {
+  background-image:
+    radial-gradient(ellipse 80% 60% at 50% 50%, rgba(184,135,46,0.1) 0%, transparent 65%);
 }
