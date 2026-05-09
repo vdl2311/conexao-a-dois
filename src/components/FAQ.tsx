@@ -1,68 +1,50 @@
-import { useState } from 'react';
-import { Reveal, SectionLabel, SectionTitle } from './Shared';
-
-export function FAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
+export const FAQ = () => {
   const faqs = [
     {
-      q: "Preciso ser cristão para usar este guia?",
-      a: "Não. O guia tem perspectiva de fé, mas os temas e ferramentas são úteis para qualquer casal que queira se reconectar. Os versículos servem como ponto de partida para reflexão, não como pré-requisito."
+      q: 'Precisa ser um casal muito em crise pra usar?',
+      a: 'Pelo contrário. Este guia é de terapia preventiva — ideal para casais que ainda se amam, mas sentem que estão perdendo a conexão no dia a dia. Quanto antes usar, menor o desgaste acumulado.'
     },
     {
-      q: "Como funciona a garantia de 7 dias?",
-      a: "Simples: se por qualquer motivo o guia não corresponder às suas expectativas nos primeiros 7 dias após a compra, basta entrar em contato conosco por e-mail e devolveremos 100% do valor pago. Sem burocracia, sem perguntas."
+      q: 'E se meu cônjuge não se interessar?',
+      a: 'Comece você. Muitos casais relatam que bastou a primeira pergunta em voz alta para o parceiro se envolver. O guia foi projetado para despertar curiosidade — não para impor disciplina.'
     },
     {
-      q: "O guia substitui terapia de casal?",
-      a: "Não. Este guia é uma ferramenta de prevenção e fortalecimento do vínculo conjugal. Casais em situações de crise severa, violência ou questões de saúde mental devem buscar acompanhamento profissional especializado."
+      q: 'Tem religião demais para o meu perfil?',
+      a: 'O guia tem uma base cristã honesta, mas os prompts de diálogo funcionam para qualquer casal. O foco é na conversa real — não em regras religiosas.'
     },
     {
-      q: "Preciso fazer os 21 dias seguidos?",
-      a: "Não precisa. O guia é flexível. Você pode fazer no seu ritmo, retomar do ponto onde parou ou repetir o ciclo sempre que sentir que a conexão precisa de atenção."
+      q: 'Como recebo o material?',
+      a: 'Imediatamente após a confirmação do pagamento, você recebe o link de download por e-mail. Funciona em qualquer celular, tablet ou computador — sem precisar instalar nada.'
     },
     {
-      q: "Em qual formato recebo o guia?",
-      a: "O guia é entregue em PDF de alta qualidade, que pode ser lido no celular, tablet ou computador. Você receberá o link de download imediatamente após a confirmação do pagamento."
+      q: 'E se eu me arrepender?',
+      a: 'Você tem 7 dias de garantia total. Se por qualquer motivo o guia não atender, basta enviar um e-mail e devolvemos 100% do valor. Sem questionamentos.'
     }
   ];
 
   return (
-    <section className="bg-brand-cream py-20 px-5">
-      <div className="max-w-[820px] mx-auto">
-        <SectionLabel>Dúvidas frequentes</SectionLabel>
-        <Reveal>
-          <SectionTitle>Perguntas que você pode ter</SectionTitle>
-        </Reveal>
-
-        <Reveal className="mt-10">
-          <div>
-            {faqs.map((faq, index) => {
-              const isOpen = openIndex === index;
-              return (
-                <div key={index} className="border-b border-brand-navy/10 py-5 last:border-b-0">
-                  <button 
-                    onClick={() => setOpenIndex(isOpen ? null : index)}
-                    className="w-full font-serif text-[19px] cursor-pointer flex justify-between items-center text-brand-navy text-left bg-transparent border-none p-0 focus:outline-none"
-                  >
-                    {faq.q}
-                    <span 
-                      className={`text-[22px] text-brand-gold shrink-0 ml-4 transition-transform duration-300 ${isOpen ? 'rotate-45' : ''}`}
-                    >
-                      +
-                    </span>
-                  </button>
-                  <div 
-                    className={`text-[16px] text-brand-gray leading-[1.8] overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[300px] pt-3 opacity-100' : 'max-h-0 pt-0 opacity-0'}`}
-                  >
-                    {faq.a}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </Reveal>
+    <section className="bg-white py-24 px-6">
+      <div className="max-w-[680px] mx-auto">
+        <p className="text-[10px] font-bold uppercase tracking-[5px] text-brand-rose mb-4 text-center">
+          Dúvidas frequentes
+        </p>
+        <h2 className="font-serif text-3xl md:text-5xl font-bold leading-tight mb-12 text-brand-text text-center">
+          Perguntas &amp; Respostas
+        </h2>
+        
+        <div className="divide-y divide-black/5">
+          {faqs.map((faq, index) => (
+            <div key={index} className="py-8 first:pt-0 last:pb-0">
+              <h3 className="font-serif text-xl font-bold mb-3 text-brand-text">
+                {faq.q}
+              </h3>
+              <p className="text-[15px] text-brand-text-muted leading-relaxed font-light">
+                {faq.a}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
-}
+};

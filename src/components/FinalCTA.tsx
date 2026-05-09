@@ -1,26 +1,28 @@
-import { PrimaryButton } from './Shared';
-
-export function FinalCTA() {
+export const FinalCTA = () => {
   return (
-    <section className="bg-brand-navy text-center py-[100px] px-5 relative overflow-hidden">
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-gold via-brand-gold2 to-brand-gold" />
+    <section className="bg-brand-warm-dark text-brand-cream py-28 px-6 text-center relative overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,rgba(201,150,58,0.15)_0%,transparent_65%)]" />
       
-      <h2 className="text-white text-[clamp(28px,5vw,48px)] mb-4 font-serif leading-tight">
-        Uma nova conversa pode abrir caminhos.<br/>
-        <em className="text-brand-gold not-italic italic">Pequenos passos diários ajudam na conexão.</em>
-      </h2>
-      
-      <p className="text-white/65 text-[19px] max-w-[600px] mx-auto mb-9 leading-[1.7]">
-        Não exige horas livres. Reserve poucos minutos com intenção e as perguntas certas.
-      </p>
-      
-      <PrimaryButton href="https://pay.hotmart.com/N105586857E" className="max-sm:px-6 max-sm:text-[15px]">
-        QUERO ACESSAR O GUIA
-      </PrimaryButton>
-      
-      <p className="max-w-[500px] mx-auto text-[16px] leading-[1.6] text-white/70 text-center mt-5">
-        Dê um passo prático para enriquecer os momentos de conexão da sua família.
-      </p>
+      <div className="relative z-10 max-w-4xl mx-auto">
+        <h2 className="font-serif text-3xl md:text-6xl font-black leading-[1.15] mb-6 max-w-3xl mx-auto">
+          Dois são melhor que um. <em className="italic text-brand-gold-light">Mas dois que se ouvem de verdade?</em> São invencíveis.
+        </h2>
+        <p className="text-brand-cream/70 text-lg md:text-xl max-w-lg mx-auto mb-12 font-light">
+          Não espere a crise bater à porta. Uma conversa de 5 minutos hoje pode salvar anos de desgaste silencioso.
+        </p>
+        
+        <a 
+          href="https://pay.hotmart.com/N105586857E" 
+          target="_blank"
+          className="inline-block bg-gradient-to-br from-brand-gold to-[#A07028] text-white font-bold text-lg uppercase tracking-wider py-6 px-14 rounded-xl transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_12px_40px_rgba(201,150,58,0.4)] active:scale-95"
+        >
+          Começar Agora por R$ 37,90
+        </a>
+        
+        <p className="mt-16 font-serif italic text-[17px] text-brand-cream/45 max-w-2xl mx-auto">
+          "Dois são melhor do que um... porque se um cair, o outro levanta o seu companheiro." — Eclesiastes 4:9
+        </p>
+      </div>
     </section>
   );
-}
+};

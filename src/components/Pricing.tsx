@@ -1,104 +1,65 @@
-import { Reveal, SectionLabel, SectionTitle, PrimaryButton } from './Shared';
-
-export function Pricing() {
+export const Pricing = () => {
   return (
-    <section className="bg-brand-navy py-20 px-5" id="preco">
-      <div className="max-w-[820px] mx-auto">
-        <SectionLabel className="!text-white/50">Acesso imediato</SectionLabel>
-        <Reveal>
-          <SectionTitle className="text-white">
-            Menos que uma sessão de terapia.<br/>
-            <em className="text-brand-gold not-italic font-serif italic">Com impacto que dura o mês inteiro.</em>
-          </SectionTitle>
-        </Reveal>
-
-        <Reveal>
-          <div className="bg-white rounded-[24px] p-[52px_44px] max-w-[520px] mx-auto text-center shadow-[0_24px_80px_rgba(0,0,0,0.25)] relative overflow-hidden max-sm:p-[36px_24px]">
-            <div className="absolute top-0 left-0 right-0 h-[5px] bg-gradient-to-r from-brand-gold to-brand-gold2" />
-            
-            <div className="bg-brand-gold text-brand-navy text-[13px] font-bold tracking-[2px] uppercase py-1.5 px-4.5 rounded-[20px] inline-block mb-6">
-              Oferta de lançamento
-            </div>
-            
-            <h2 className="text-[28px] mb-2 font-serif text-brand-navy">Conexão a Dois</h2>
-            <p className="text-[17px] text-brand-gray mb-7">Guia Completo de Terapia Preventiva Conjugal</p>
-            
-            <p className="text-[18px] text-brand-gray line-through mb-1">De R$ 67,00</p>
-            <p className="text-[14px] text-brand-gold font-bold mb-1">Para ajudar o maior número de famílias, o valor hoje é:</p>
-            
-            <div className="flex items-baseline justify-center gap-1.5 mb-1.5">
-              <span className="text-[22px] text-brand-navy font-bold pt-2">R$</span>
-              <span className="font-serif text-[68px] font-black text-brand-navy leading-none max-sm:text-[54px]">37</span>
-              <span className="text-[26px] font-bold text-brand-navy pt-2">,90</span>
-            </div>
-            
-            <p className="text-[15px] text-brand-gray mb-7">Pagamento único · Acesso imediato e vitalício</p>
-
-            <div className="bg-brand-cream/50 rounded-xl p-6 mb-8 border border-brand-gold/20">
-              <h4 className="text-brand-navy font-serif text-[18px] mb-4">Por que este investimento?</h4>
-              <ul className="text-left space-y-3">
-                <li className="text-[14px] text-brand-gray flex items-start gap-2 italic">
-                  <span className="text-brand-gold">•</span>
-                  Custa menos que um jantar de delivery que vocês pedem quando estão cansados.
-                </li>
-                <li className="text-[14px] text-brand-gray flex items-start gap-2 italic">
-                  <span className="text-brand-gold">•</span>
-                  Representa menos de 10% do valor de uma única sessão de terapia de casal.
-                </li>
-                <li className="text-[14px] text-brand-gray flex items-start gap-2 italic">
-                  <span className="text-brand-gold">•</span>
-                  Você paga pela curadoria: não precisa pensar "sobre o que vamos falar hoje".
-                </li>
-              </ul>
+    <section className="bg-brand-cream py-24 px-6 text-center" id="comprar">
+      <div className="max-w-4xl mx-auto">
+        <p className="text-[10px] font-bold uppercase tracking-[5px] text-brand-rose mb-4">
+          Sua decisão
+        </p>
+        <h2 className="font-serif text-3xl md:text-5xl font-bold leading-tight mb-12 text-brand-text max-w-2xl mx-auto">
+          Invista no casamento hoje. O preço do silêncio é infinitamente maior.
+        </h2>
+        
+        <div className="bg-white rounded-[24px] p-8 md:p-14 shadow-[0_20px_80px_rgba(0,0,0,0.1)] relative overflow-hidden before:absolute before:top-0 before:left-0 before:right-0 before:h-1 before:bg-gradient-to-r before:from-brand-gold before:via-brand-rose before:to-brand-sage text-left">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="order-2 md:order-1">
+              <img 
+                src="mockup.png" 
+                alt="Guia Conexão a Dois" 
+                className="w-full h-auto rounded-xl shadow-lg border border-black/5"
+                referrerPolicy="no-referrer"
+              />
             </div>
 
-            <ul className="text-left my-6">
-              <li className="text-[16px] py-2.5 border-b border-[#F0EBE0] flex items-center gap-3 text-brand-navy before:content-['✓'] before:text-brand-gold before:font-bold before:text-[18px] before:shrink-0">
-                Guia completo em PDF (mais de 50 páginas)
-              </li>
-              <li className="text-[16px] py-2.5 border-b border-[#F0EBE0] flex items-center gap-3 text-brand-navy before:content-['✓'] before:text-brand-gold before:font-bold before:text-[18px] before:shrink-0">
-                Ciclo de 21 dias com prompts diários
-              </li>
-              <li className="text-[16px] py-2.5 border-b border-[#F0EBE0] flex items-center gap-3 text-brand-navy before:content-['✓'] before:text-brand-gold before:font-bold before:text-[18px] before:shrink-0">
-                Módulo completo sobre Finanças do Casal
-              </li>
-              <li className="text-[16px] py-2.5 border-b border-[#F0EBE0] flex items-center gap-3 text-brand-navy before:content-['✓'] before:text-brand-gold before:font-bold before:text-[18px] before:shrink-0">
-                Módulo de Intimidade e Reconexão
-              </li>
-              <li className="text-[16px] py-2.5 border-b border-[#F0EBE0] flex items-center gap-3 text-brand-navy before:content-['✓'] before:text-brand-gold before:font-bold before:text-[18px] before:shrink-0">
-                Módulo de Comunicação Saudável
-              </li>
-              <li className="text-[16px] py-2.5 border-b border-[#F0EBE0] flex items-center gap-3 text-brand-navy before:content-['✓'] before:text-brand-gold before:font-bold before:text-[18px] before:shrink-0">
-                Acesso vitalício com atualizações gratuitas
-              </li>
-            </ul>
+            <div className="order-1 md:order-2">
+              <div className="inline-block bg-brand-rose text-white text-[10px] font-bold uppercase tracking-[3px] py-1.5 px-4 rounded-full mb-6">
+                Oferta de Lançamento
+              </div>
+              
+              <div className="font-serif text-[64px] font-black text-brand-warm-dark leading-none flex items-start mb-2">
+                <span className="text-2xl font-bold mt-2">R$</span>
+                37
+                <span className="text-2xl font-bold mt-2">,90</span>
+              </div>
+              
+              <p className="text-[13px] text-brand-text-muted mb-9">
+                Acesso vitalício · PDF imediato · Para os dois
+              </p>
+              
+              <a 
+                href="https://pay.hotmart.com/N105586857E" 
+                target="_blank"
+                className="block w-full bg-gradient-to-br from-brand-gold to-[#A07028] text-white font-bold text-lg uppercase tracking-wider py-5 px-8 rounded-xl transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_12px_40px_rgba(201,150,58,0.4)] animate-pulse-slow mb-5 active:scale-95 text-center"
+              >
+                ✦ Quero Reconectar Agora
+              </a>
+              
+              <p className="text-[13px] text-brand-text-muted mb-8 text-center md:text-left">
+                Pagamento 100% seguro · Pix, cartão ou boleto
+              </p>
 
-            <div className="bg-brand-cream border border-dashed border-brand-gold rounded-xl py-4 px-5 my-6 flex items-center gap-3.5 text-left">
-              <div className="text-[32px] shrink-0">🛡️</div>
-              <div>
-                <h4 className="text-[18px] mb-[3px] text-brand-navy font-serif">Garantia de 7 dias — sem perguntas</h4>
-                <p className="text-[15px] text-brand-gray leading-[1.5]">
-                  Se por qualquer motivo o guia não for o que você esperava, devolveremos 100% do seu investimento em até 7 dias após a compra.
-                </p>
+              <div className="flex items-start gap-4 p-5 bg-[#F0FAF4] rounded-xl border border-brand-sage/20">
+                <div className="text-3xl shrink-0">🛡️</div>
+                <div className="text-brand-sage font-bold text-[11px] uppercase tracking-wider leading-tight">
+                  Garantia de 7 dias
+                  <span className="block font-light text-brand-text-muted normal-case tracking-normal text-[12px] mt-1.5 opacity-80">
+                    Se em 7 dias você não sentir nenhuma diferença na conexão do seu casal, devolvemos cada centavo.
+                  </span>
+                </div>
               </div>
             </div>
-
-            <PrimaryButton className="block w-full mt-2 max-sm:px-2 max-sm:text-[15px]" href="https://pay.hotmart.com/N105586857E">
-              QUERO ACESSAR O GUIA
-            </PrimaryButton>
-
-            <div className="text-[15px] leading-[1.5] text-brand-gray mt-4 text-center">
-              Dê um passo prático para enriquecer os momentos de conexão da sua família.
-            </div>
-
-            <div className="flex justify-center gap-4 mt-6 flex-wrap">
-              <span className="text-[13px] text-brand-gray flex items-center gap-1">🔒 Compra segura</span>
-              <span className="text-[13px] text-brand-gray flex items-center gap-1">📱 Acesso no celular</span>
-              <span className="text-[13px] text-brand-gray flex items-center gap-1">⚡ Entrega imediata</span>
-            </div>
           </div>
-        </Reveal>
+        </div>
       </div>
     </section>
   );
-}
+};

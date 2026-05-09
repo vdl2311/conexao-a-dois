@@ -1,66 +1,43 @@
-import { Reveal, SectionLabel, SectionTitle } from './Shared';
+export const Testimonials = () => {
+  const testimonials = [
+    {
+      text: '"Na primeira semana já tivemos a conversa sobre dinheiro que adiamos por 3 anos. Sem briga. Com calma. Não acredito que 5 minutos puderam fazer isso."',
+      name: 'Rodrigo & Camila · 8 anos de casados'
+    },
+    {
+      text: '"Tentamos vários devocionais. Esse é diferente porque não tem rodeio. Pergunta o que dói de verdade e te dá segurança pra responder."',
+      name: 'André & Priscila · 5 anos de casados'
+    },
+    {
+      text: '"A semana de intimidade foi reveladora. Conversamos sobre coisas que nunca tínhamos dito um ao outro. Sentimos que nos encontramos de novo."',
+      name: 'Thiago & Juliana · 12 anos de casados'
+    }
+  ];
 
-export function Testimonials() {
   return (
-    <section className="bg-brand-light py-20 px-5">
-      <div className="max-w-[1060px] mx-auto">
-        <SectionLabel>Autoridade em Acolhimento</SectionLabel>
-        <Reveal>
-          <SectionTitle>A sabedoria da prevenção no seu lar</SectionTitle>
-        </Reveal>
-
-        <Reveal>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 mb-16">
-            <div className="border-l-4 border-brand-gold pl-6 py-2">
-              <p className="font-serif italic text-[24px] md:text-[26px] text-brand-navy leading-snug">
-                "O segredo de um lar abençoado não está em grandes gestos, mas na constância dos pequenos detalhes."
+    <section className="bg-brand-warm-dark text-brand-cream py-24 px-6 text-center">
+      <div className="max-w-5xl mx-auto">
+        <h2 className="font-serif text-3xl md:text-5xl font-bold leading-tight mb-16 text-brand-cream">
+          O que casais estão dizendo
+        </h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          {testimonials.map((testi, index) => (
+            <div 
+              key={index} 
+              className="bg-white/5 border border-brand-gold/20 rounded-2xl p-10 text-left transition-colors hover:bg-white/10"
+            >
+              <div className="text-brand-gold text-lg tracking-[3px] mb-5">★★★★★</div>
+              <p className="text-[16px] text-brand-cream/85 italic leading-relaxed mb-6">
+                {testi.text}
+              </p>
+              <p className="text-[11px] font-bold tracking-[2px] uppercase text-brand-gold-light">
+                {testi.name}
               </p>
             </div>
-            <div className="border-l-4 border-brand-gold pl-6 py-2">
-              <p className="font-serif italic text-[24px] md:text-[26px] text-brand-navy leading-snug">
-                "Não espere a crise chegar para buscar a direção. A prevenção é o caminho da sabedoria."
-              </p>
-            </div>
-          </div>
-        </Reveal>
-
-        <div className="w-[60px] h-[2px] bg-brand-gold/30 mx-auto my-16" />
-
-        <SectionLabel>O Impacto Prático</SectionLabel>
-        <Reveal>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-10">
-            <div className="bg-white rounded-[14px] p-6 shadow-[0_4px_18px_rgba(26,39,68,0.07)] relative before:content-['\22'] before:font-serif before:text-[64px] before:text-brand-gold before:opacity-30 before:absolute before:top-2 before:left-4 before:leading-none">
-              <p className="text-[16px] leading-[1.8] text-brand-navy mt-5 italic">
-                A pergunta do dia 3 nos fez chorar juntos pela primeira vez em meses. Parece simples, mas foi exatamente o que precisávamos para quebrar o gelo.
-              </p>
-              <p className="mt-4 text-[15px] font-bold text-brand-navy">
-                Marcelo e Camila <span className="text-[14px] text-brand-gray font-normal">— casados há 8 anos</span>
-              </p>
-              <div className="text-brand-gold text-[16px] mt-2.5">★★★★★</div>
-            </div>
-
-            <div className="bg-white rounded-[14px] p-6 shadow-[0_4px_18px_rgba(26,39,68,0.07)] relative before:content-['\22'] before:font-serif before:text-[64px] before:text-brand-gold before:opacity-30 before:absolute before:top-2 before:left-4 before:leading-none">
-              <p className="text-[16px] leading-[1.8] text-brand-navy mt-5 italic">
-                A semana de finanças foi transformadora. Nunca tínhamos conseguido falar sobre dinheiro sem brigar. Os prompts criaram um espaço seguro que nunca tínhamos tido antes.
-              </p>
-              <p className="mt-4 text-[15px] font-bold text-brand-navy">
-                Renata e Felipe <span className="text-[14px] text-brand-gray font-normal">— casados há 5 anos</span>
-              </p>
-              <div className="text-brand-gold text-[16px] mt-2.5">★★★★★</div>
-            </div>
-
-            <div className="bg-white rounded-[14px] p-6 shadow-[0_4px_18px_rgba(26,39,68,0.07)] relative before:content-['\22'] before:font-serif before:text-[64px] before:text-brand-gold before:opacity-30 before:absolute before:top-2 before:left-4 before:leading-none">
-              <p className="text-[16px] leading-[1.8] text-brand-navy mt-5 italic">
-                Simples, honesto e direto ao ponto. Sem enrolação, sem aquela linguagem de devocional que faz você se sentir culpado. Muito melhor do que esperávamos.
-              </p>
-              <p className="mt-4 text-[15px] font-bold text-brand-navy">
-                Thiago e Priscila <span className="text-[14px] text-brand-gray font-normal">— casados há 12 anos</span>
-              </p>
-              <div className="text-brand-gold text-[16px] mt-2.5">★★★★★</div>
-            </div>
-          </div>
-        </Reveal>
+          ))}
+        </div>
       </div>
     </section>
   );
-}
+};
