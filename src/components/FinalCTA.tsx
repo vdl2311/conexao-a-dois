@@ -49,7 +49,7 @@ export const FinalCTA = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.5 }}
-          className="mt-20 font-serif italic text-base text-brand-cream/30 max-w-2xl mx-auto leading-relaxed"
+          className="mt-20 font-serif italic text-lg text-brand-cream/70 max-w-2xl mx-auto leading-relaxed border-t border-white/5 pt-10"
         >
           "Dois são melhor do que um... porque se um cair, o outro levanta o seu companheiro." — Eclesiastes 4:9-10
         </motion.p>
